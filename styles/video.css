@@ -1,0 +1,90 @@
+
+.thumbnail {
+    width: 100%;
+    height: 240px;
+    /* position: relative;
+    z-index: 0; */
+
+}
+.timestamp {
+    position: absolute;
+    font: Roboto, Arial;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color:rgba(75, 74, 74, 0.5);
+    color: white;
+    font-size: 14px;
+    font-weight:500;
+}
+
+.thumbnail-row {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    /* margin-top: 20px; */
+}
+
+/* .channel-pic {
+     width: 40px; 
+}    */
+.profile-pic {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video-info {
+    width: 200px;
+    margin-left: 7px;
+}
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.video-author, 
+.video-stat {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+
+.video-author {
+    margin-bottom: 5px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    margin-top: 30px;
+}
+
+/* Media Query for responsive design... */
+
+
+ @media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+ @media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+ }
